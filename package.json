@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node build.js",
     "lint": "eslint --ext js,md .",
-    "prepublish": "npm run build",
+    "pretest": "npm run build",
     "test": "ava",
     "posttest": "npm run lint"
   },
@@ -27,6 +27,7 @@
     "node": ">=6"
   },
   "files": [
+    "*.md",
     "index.js"
   ]
 }
