@@ -28,6 +28,7 @@
   },
   "files": [
     "*.md",
-    "index.js"
+    "index.js",
+    "rules.json"
   ]
 }
