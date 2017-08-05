@@ -50,6 +50,12 @@ async function buildRules() {
 
 async function main() {
   const rules = await buildRules()
+  rules['.DS_Store'] = [
+    {
+      group: 'macOS',
+      comment: 'General',
+    },
+  ]
   const sortedRules = _.mapValues(rules, l => _.sortBy(l, ['group']))
   await writeJsonFile('rules.json', sortedRules, {
     indent: 2,
