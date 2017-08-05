@@ -1,6 +1,6 @@
 {
   "name": "gitignore-rules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rules of .gitignore from github/gitignore",
   "scripts": {
     "build": "node build.js",
